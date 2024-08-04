@@ -10,22 +10,24 @@ function clearWord(word){
     return word.replace(/[!@#$%&*()_+-='"~|,.;/\r]/g, '')
 }
 
-function countDuplicatedWords(paragraph){
-    const duplicatedWords = {}
+function countWords(paragraph){
+    const duplicatedWordsObject = {}
     const words = getWords(paragraph)
     words.forEach(word => {
-        const clearedWord = clearWord(word)
-        duplicatedWords[clearedWord] = (duplicatedWords[clearedWord] || 0) + 1
+        if (word.length > 2){
+            const clearedWord = clearWord(word).toLowerCase()
+            duplicatedWordsObject[clearedWord] = (duplicatedWordsObject[clearedWord] || 0) + 1
+        }
     })
-    return duplicatedWords
+    return duplicatedWordsObject
 }
 
-function getDuplicatedWords(text) {
+function getDuplicatedWordsList(text) {
      const paragraphList = getParagraph(text)
      const duplicatedWordsList = paragraphList.flatMap(paragraph => {
-        return countDuplicatedWords(paragraph)
+        return countWords(paragraph)
      })
      return duplicatedWordsList
 }
 
-export {getDuplicatedWords}
+export {getDuplicatedWordsList}
