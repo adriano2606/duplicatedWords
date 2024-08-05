@@ -4,6 +4,7 @@ This project involves creating a program that analyzes a text input to identify 
 
 ## How to run:
 
+- Clone the repo
 - Save a .txt file containing a text in the "archives" folder.
 - Run the project, as follows:
 
