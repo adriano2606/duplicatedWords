@@ -1,13 +1,13 @@
 {
   "name": "duplicatedwords",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project involves creating a program that analyzes a text input to identify words that appear more than once. The tool will output a list of duplicated words along with their respective counts. It aims to help users understand the frequency of specific words in their text, which can be useful for various applications such as improving writing quality, ensuring keyword balance in SEO content, or simply for linguistic analysis.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Adriano de Camargo",
   "license": "ISC"
 }
