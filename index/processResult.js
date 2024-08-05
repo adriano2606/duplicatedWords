@@ -15,6 +15,11 @@ function outputDuplicatedWords(paragraphList){
             output += `Repeated Words in paragraph ${index + 1}: ${duplicatedWordsWithCount.join(', ')}\n`
         }
     })
+
+    if (!output){
+        return 'That is great! There are no repeated words!!'
+    }
+    
     return output
 }
 
