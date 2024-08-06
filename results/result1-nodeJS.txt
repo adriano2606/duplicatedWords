@@ -1,0 +1,5 @@
+Repeated Words in paragraph 1: nodejs(2), javascript(4), that(3), the(3), model(2)
+Repeated Words in paragraph 2: the(3), nodejs(2), applications(3), that(2)
+Repeated Words in paragraph 3: package(2), manager(2), npm(2), and(3), developers(2)
+Repeated Words in paragraph 4: the(4), architecture(2), and(3), applications(3), developers(2), can(2), that(2)
+Repeated Words in paragraph 5: nodejs(2), the(5), developers(2), with(2), its(2), and(3), web(2), applications(2)

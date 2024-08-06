@@ -4,6 +4,7 @@ import { getDuplicatedWordsList } from './index/processTextData.js';
 import { processError } from './errors/erroProcessing.js';
 import {outputDuplicatedWords, createFile} from './index/processResult.js';
 import {Command} from 'commander';
+import chalk from 'chalk';
 
 const program = new Command();
 
@@ -13,8 +14,8 @@ program
     .action(options => {
         const {text} = options;
         if (!text) {
-            console.error('Please, provide the source file')
-            programa.help();
+            console.error(chalk.red('Please, provide the source file'));
+            program.help();
             return;
         }
         const sourcePath = path.resolve(text);
@@ -40,7 +41,5 @@ function processFile (text){
             processError(error)
         }
     })
-
-
 
 }

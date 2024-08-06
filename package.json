@@ -11,6 +11,7 @@
   "author": "Adriano de Camargo",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.3.0",
     "commander": "^12.1.0"
   }
 }

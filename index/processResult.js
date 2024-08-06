@@ -1,4 +1,5 @@
 import fs from 'fs'
+import chalk from 'chalk';
 
 function filterForDuplicatedWords(paragraphCount){
     return Object.keys(paragraphCount).filter(word => paragraphCount[word] > 1)
@@ -30,9 +31,9 @@ async function createFile(content){
     const newFilePath = `${pathToSave}/result${totalArchivesOnDir+1}-${archiveRead}`
     try{
         await fs.promises.writeFile(newFilePath,content)
-        console.log(`File sucessfully created!\nFile path:${newFilePath}`);
+        console.log(chalk.green(`File sucessfully created!\nFile path:${newFilePath}`));
     } catch (error){
-        console.log(error);
+        console.log(chalk.red(error));
     }
 }
 
