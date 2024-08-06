@@ -9,7 +9,11 @@ This project involves creating a program that analyzes a text input to identify 
 - Run the project, as follows:
 
 ```bash
-  node cli.js ./archives/[FILE-TO-BE-READ].txt
+  npm install
+```
+
+```bash
+  node cli.js -t ./archives/[FILE-TO-BE-READ].txt
 ```
 
 Example using a default file:
