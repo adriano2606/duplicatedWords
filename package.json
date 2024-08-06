@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Adriano de Camargo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
 }

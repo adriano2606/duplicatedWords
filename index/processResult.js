@@ -24,7 +24,7 @@ function outputDuplicatedWords(paragraphList){
 }
 
 async function createFile(content){
-    const archiveRead = process.argv[2].replace('./archives/','')
+    const archiveRead = process.argv[3].replace('./archives/','')
     const pathToSave = './results'
     const totalArchivesOnDir = fs.readdirSync(pathToSave).length
     const newFilePath = `${pathToSave}/result${totalArchivesOnDir+1}-${archiveRead}`
